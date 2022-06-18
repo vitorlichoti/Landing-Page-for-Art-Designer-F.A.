@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #EDEFF0;
+}
+
+.slide {
+    display: none;
+    position: relative;
+    margin-top: 120px;
+}
+
+.slide-container {
+    background-color: #686464;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 60%;
+    height: 100%;
+    align-items: center;
+}
+a {
+    color: #686464;
+    text-transform: uppercase;
+    text-shadow: #EDEFF0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    font
+}
+
+.nav-container {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .media-container {
+      display: flex;
+      bottom: 1.5em;
+      margin-left: 30em;
+      width: 100px;
+      position: fixed;
+      justify-content: space-between;
+  }
+
+  .background-logo {
+    margin-left: 300px;
+    margin-top: 100px;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
